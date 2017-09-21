@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8"><!-- <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"> -->
+	<meta content="user-scalable=no, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, minimal-ui" name="viewport">
+	<script src="../../js/cytoscape.min.js">
+	</script>
+	<meta content="" name="description">
+	<meta content="" name="author">
+	<title>Ascendance Biomedical - Web-of-Trust Proof-of-Concept</title><!-- Bootstrap core CSS -->
+	<link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet"><!-- Custom styles for this template -->
+	<link href="css/ascendance.css" rel="stylesheet">
+</head>
+<body>
+	<!-- Navigation -->
+	<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-bottom">
+		<div class="container">
+		<!-- TODO: Add a metamask logo to the right of the text below -->
+			<a class="navbar-brand" href="#">Login Using Metamask</a> <button aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler" data-target="#navbarResponsive" data-toggle="collapse" type="button"><span class="navbar-toggler-icon"></span></button>
+			<div class="collapse navbar-collapse" id="navbarResponsive">
+				<ul class="navbar-nav ml-auto">
+					<li class="nav-item active">
+					<!-- TODO: @Eliott Hide these buttons until Login has happened  -->
+						<a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+					</li>
+					<li class="nav-item">
+					<!-- TODO: @Eliott Make these buttons switch to other pages, based on ETHLove -->
+						<a class="nav-link" href="#">Register</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#">Attest</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#">Accept</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</nav><!-- Page Content -->
+	<section>
+		<div class="container">
+			<div class="row">
+
+				
+                <!-- TODO: Make this panel (and effectively main-panel; sub-panel) reach all the way to the left side of the screen, 
+				and all the way to the side-panel -->
+				<div class="col-lg-8 left-panel">
+
+					<div class="col-lg-8 main-panel" id="cy" style="min-height: 450px;"></div>
+					<div class="col-lg-8 sub-panel">
+					<!-- TODO: Make this H1 use Orbitron font (not yet installed) -->
+						<h1>Ascendance Biomedical</h1>
+						<p>Above is a web-of-trust created using mutually signed Ethereum transactions. This system is a transparent, decentralized biomedical eco-system, linking companies, researchers, testers, manufacturers, and distributors to allow people to purchase therapies from gray markets with confidence.</p>
+						<p>Click on a node or a link in order to get more information.</p>
+					</div>
+				</div>
+				<div class="side-panel col-lg-4">
+				<!-- TODO: Make this panel reach the footer instead of having a gap -->
+					<p>This is where additional information will be shown when one of the nodes or edges are clicked on.</p>
+				</div>
+			</div>
+		</div>
+	</section><!-- Bootstrap core JavaScript -->
+	<script src="vendor/jquery/jquery.min.js">
+	</script> 
+	<script src="vendor/popper/popper.min.js">
+	</script> 
+	<script src="vendor/bootstrap/js/bootstrap.min.js">
+	</script> 
+	<script src="cytoscape.js">
+	</script> 
+	
+	<!-- @Eliott Please edit this .js file below to create a tree based on registry -->
+	<script src="code.js">
+	</script>
+</body>
+</html>
